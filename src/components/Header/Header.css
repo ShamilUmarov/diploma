@@ -1,11 +1,11 @@
 .Header {
-  min-height: 30vh;
+  min-height: 80vh;
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  background-size: 100%;
+
   color:black;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
