@@ -7,10 +7,6 @@ function Menu() {
         odit harum sit corrupti magnam fuga velit id alias cupiditate quaerat,
         similique dolorum sapiente soluta, ab distinctio eveniet inventore
         architecto!
-        odit harum sit corrupti magnam fuga velit id alias cupiditate quaerat,
-        similique dolorum sapiente soluta, ab distinctio eveniet inventore
-        architecto!
-        
       </p>
     </article>
   );

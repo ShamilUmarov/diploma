@@ -1,5 +1,5 @@
 .Header {
-  min-height: 80vh;
+  height: 100vh;
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
