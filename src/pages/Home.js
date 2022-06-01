@@ -1,16 +1,20 @@
-import "./Home.css"
+import Header from "../components/Header/Header";
+import headerImage from "../assets/product.jpg";
+import CategoryList from "../components/CategoryList/CategoryList";
+import { getCategories } from "../data/categories";
+
 function Home() {
   return (
-    <article>
-      <h1>This is Home page.</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit
-        odit harum sit corrupti magnam fuga velit id alias cupiditate quaerat,
-        similique dolorum sapiente soluta, ab distinctio eveniet inventore
-        architecto!
-       
-      </p>
-    </article>
+    <>
+      <Header
+        title="Welcome to our coffee shop!"
+        image={headerImage}>
+        A coffee bean is a seed of the Coffea plant and the source for coffee. It is the pip inside the red or purple fruit often referred to as a cherry. Just like ordinary cherries, the coffee fruit is also a so-called stone fruit. Even though the coffee beans are not technically beans, they are referred to as such because of their resemblance to true beans.
+      </Header>
+
+      <CategoryList categories={getCategories()} />
+    </>
   );
 }
+
 export default Home;

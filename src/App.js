@@ -1,27 +1,27 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Nav from "./components/Nav/Nav";
-
 import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Meny from "./pages/Meny";
-import Promo from "./pages/Promo";
+import Contacts from "./pages/Contacts";
+import Products from "./pages/Products";
 import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Product from "./pages/Product";
+import NotFound from "./pages/NotFound";
+import Categories from "./pages/Categories";
+import Category from "./pages/Category";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Meny" element={<Meny />} />
-        <Route path="/Promo" element={<Promo />} />
-      </Routes>
-
-      <Footer />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:productId" element={<Product />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/categories/:categoryId" element={<Category />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
     </div>
   );
 }

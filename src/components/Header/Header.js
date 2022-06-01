@@ -1,10 +1,15 @@
 import "./Header.css";
-import headerImage from "../../assets/header5.jpg";
 
-function Header() {
-  return <header className="Header" >
-    <img src={headerImage} alt="des" />
-  </header>;
+function Header({ image, title, children }) {
+  return (
+    <header className="Header">
+      <img src={image} alt={title} />
+      <section>
+        <h1>{title}</h1>
+        <p>{children}</p>
+      </section>
+    </header>
+  );
 }
 
 export default Header;
